@@ -128,7 +128,7 @@ export function ServicesSection() {
   }, []);
 
   return (
-    <section className="py-20 mt-16">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div id="service-heading" className="text-left mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">

@@ -1,5 +1,6 @@
 "use client";
 
+import { CometCard } from "@/components/comet-card";
 import { motion } from "framer-motion";
 import { Rocket, Search, PenTool, Handshake, Lightbulb } from "lucide-react";
 
@@ -62,9 +63,9 @@ export default function AboutPage() {
       </div>
 
       {/* What Makes Us Different */}
-      <div className="bg-gray-100 py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-primary mb-12">
+      <div className=" py-20">
+        <div className="max-w-6xl mx-auto px-6 text-right">
+          <h2 className="text-5xl font-bold text-primary mb-24">
             What Makes Us Different
           </h2>
 
@@ -96,15 +97,16 @@ export default function AboutPage() {
                 text: "Clear timelines, honest pricing, no hidden surprises.",
               },
             ].map((item, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.05 }}
-                className="bg-white rounded-2xl shadow-md p-8 text-left"
-              >
-                <item.icon className="h-10 w-10 text-primary mb-4" />
-                <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
-                <p className="text-gray-600 text-sm">{item.text}</p>
-              </motion.div>
+              <CometCard key={i}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white rounded-2xl shadow-md p-8 text-left"
+                >
+                  <item.icon className="h-10 w-10 text-primary mb-4" />
+                  <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
+                  <p className="text-gray-600 text-sm">{item.text}</p>
+                </motion.div>
+              </CometCard>
             ))}
           </div>
         </div>
@@ -112,7 +114,7 @@ export default function AboutPage() {
 
       {/* Call to Action */}
       <div className="text-center py-20">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl font-bold text-primary mb-4">
           Meet Your Growth Partner
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
