@@ -41,8 +41,8 @@ export default function HeroSection() {
     });
   }, []);
   return (
-    <section className="h-full lg:h-[calc(100vh-10vh)] px-5 pb-6 overflow-hidden">
-      <div className="relative h-full w-full  py-4 lg:py-0 ">
+    <section className="h-full lg:h-[80vh] max-w-[90rem] mx-auto overflow-hidden mt-10 px-4">
+      <div className="relative h-full w-full py-4 lg:py-0 ">
         <Image
           src="/images/hero-bg.jpg"
           alt="intro-hero"
@@ -52,17 +52,7 @@ export default function HeroSection() {
         />
 
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between h-full px-6 sm:px-12 text-white">
-          <div className="max-w-xl text-center lg:text-left mt-6 lg:mt-0">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 2 }}
-              className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm mb-6"
-            >
-              <span className="text-sm font-medium">
-                Leading IT Solutions Agency
-              </span>
-            </motion.div>
+          <div className="max-w-xl text-center lg:text-left mt-6 lg:mt-0 ">
             <motion.h1
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -80,9 +70,9 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 2 }}
               className="mt-4 text-lg opacity-90"
             >
-              We deliver innovative web development, app solutions, digital
-              marketing, and creative services that drive real results for your
-              business growth.
+              Your one-stop digital agency for Website Development, SEO, Digital
+              Marketing, Branding, and Creative Design everything you need to
+              thrive online.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -95,11 +85,6 @@ export default function HeroSection() {
                 Get Started Today
               </button>
             </motion.div>
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-              <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-                <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse" />
-              </div>
-            </div>
           </div>
 
           <div className="lg:w-1/2 flex justify-center items-center">
@@ -112,6 +97,13 @@ export default function HeroSection() {
               priority
               id="hero-right-img"
             />
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse" />
           </div>
         </div>
       </div>
