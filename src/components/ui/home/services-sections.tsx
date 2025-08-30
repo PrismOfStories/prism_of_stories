@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useEffect } from "react";
 import gsap from "gsap";
+import { CometCard } from "@/components/comet-card";
 
 const services = [
   {
@@ -125,14 +126,15 @@ export function ServicesSection() {
       }
     );
   }, []);
+
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div id="service-heading" className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div id="service-heading" className="text-left mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Our <span className="text-primary">Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-left text-primary max-w-3xl  leading-relaxed">
             We offer comprehensive IT solutions designed to accelerate your
             business growth and digital transformation journey.
           </p>
@@ -140,53 +142,54 @@ export function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card
-              key={index}
-              className="group hover:shadow-xl transition-all duration-300 border-0 
-             bg-gradient-to-br from-[#553d88] via-[#8877ab] to-[#553d88] text-white"
-            >
-              <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-xl gradient-brand-subtle flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-8 w-8 " />
-                </div>
+            <CometCard key={index}>
+              <Card
+                className="group hover:shadow-xl transition-all duration-300 border-0 
+             bg-primary text-white"
+              >
+                <CardContent className="p-8">
+                  {/* <div className="w-16 h-16 rounded-xl gradient-brand-subtle flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="h-8 w-8 " />
+                  </div> */}
 
-                {/* Content */}
-                <h3 className="text-xl font-bold  mb-4">{service.title}</h3>
-                <p className=" mb-6 leading-relaxed">{service.description}</p>
+                  {/* Content */}
+                  <h3 className="text-2xl font-bold  mb-4">{service.title}</h3>
+                  <p className=" mb-6 leading-relaxed">{service.description}</p>
 
-                {/* Features */}
-                <div className="space-y-2 mb-6">
-                  {service.features.map((feature, featureIndex) => (
-                    <div
-                      key={featureIndex}
-                      className="flex items-center text-sm "
-                    >
-                      <div className="w-1.5 h-1.5 rounded-full bg-white mr-3" />
-                      {feature}
-                    </div>
-                  ))}
-                </div>
+                  {/* Features */}
+                  <div className="space-y-2 mb-6">
+                    {service.features.map((feature, featureIndex) => (
+                      <div
+                        key={featureIndex}
+                        className="flex items-center text-sm "
+                      >
+                        <div className="w-1.5 h-1.5 rounded-full bg-white mr-3" />
+                        {feature}
+                      </div>
+                    ))}
+                  </div>
 
-                {/* CTA */}
-                <Button
-                  variant="outline"
-                  className="w-full group-hover:bg-white group-hover:text-black transition-colors bg-transparent"
-                >
-                  Get Quote
-                </Button>
-              </CardContent>
-            </Card>
+                  {/* CTA */}
+                  <Button
+                    variant="outline"
+                    className="w-full group-hover:bg-white group-hover:text-black transition-colors bg-transparent"
+                  >
+                    Get Quote
+                  </Button>
+                </CardContent>
+              </Card>
+            </CometCard>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <p className="text-gray-600 mb-6">
+        <div className="text-center mt-24">
+          <p className="text-primary mb-6 text-4xl">
             Need a custom solution? We&apos;ve got you covered.
           </p>
           <Button
             size="lg"
-            className="gradient-brand-subtle text-white hover:opacity-90 px-8"
+            className="bg-primary text-2xl text-white hover:opacity-90 py-8 px-8"
           >
             Discuss Your Project
           </Button>
