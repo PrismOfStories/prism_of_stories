@@ -4,9 +4,12 @@ import { CometCard } from "@/components/comet-card";
 import { motion } from "framer-motion";
 import { Rocket, Search, PenTool, Handshake, Lightbulb } from "lucide-react";
 
+
 export default function AboutPage() {
+
+
   return (
-    <section className="bg-gray-50 mt-10">
+    <section className="bg-black mt-10">
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-violet-700 via-purple-600 to-indigo-700 text-white">
         <div className="max-w-7xl mx-auto px-6 py-24 text-center">
@@ -25,7 +28,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className=" max-w-[87rem] mx-auto px-6 py-28">
+      <div className=" max-w-[87rem] bg-black mx-auto px-6 py-28">
         <div className="w-full flex justify-between items-start gap-8 lg:flex-row flex-col">
           <h1 className="text-6xl text-primary font-bold text-center lg:text-left mb-12 leading-tight">
             Who We Are
@@ -41,10 +44,10 @@ export default function AboutPage() {
         </div>{" "}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto px-6 py-16">
-        <div className="bg-white shadow-lg rounded-2xl p-8">
-          <h3 className="text-2xl font-bold mb-4 text-primary">Our Mission</h3>
-          <p className="text-gray-600 leading-relaxed">
+      <div className="grid md:grid-cols-2 gap-12 max-w-6xl  mx-auto px-6 py-16">
+        <div className="bg-primary shadow-lg rounded-2xl p-8">
+          <h3 className="text-2xl font-bold mb-4 text-white">Our Mission</h3>
+          <p className="text-gray-200 leading-relaxed">
             To empower businesses of all sizes with smart{" "}
             <strong>digital solutions</strong> that drive growth, build trust,
             and create lasting impressions. We don’t just deliver projects — we
@@ -52,9 +55,9 @@ export default function AboutPage() {
             <strong>your success is our success</strong>.
           </p>
         </div>
-        <div className="bg-white shadow-lg rounded-2xl p-8">
-          <h3 className="text-2xl font-bold mb-4 text-primary">Our Vision</h3>
-          <p className="text-gray-600 leading-relaxed">
+        <div className="bg-primary shadow-lg rounded-2xl p-8">
+          <h3 className="text-2xl font-bold mb-4 text-white">Our Vision</h3>
+          <p className="text-gray-200 leading-relaxed">
             To become a leading <strong>digital growth partner</strong>, known
             for combining creativity with strategy, and delivering{" "}
             <strong>measurable results</strong> that matter.
@@ -100,11 +103,11 @@ export default function AboutPage() {
               <CometCard key={i}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  className="bg-white rounded-2xl shadow-md p-8 text-left"
+                  className="bg-primary rounded-2xl shadow-md p-8 text-left"
                 >
-                  <item.icon className="h-10 w-10 text-primary mb-4" />
-                  <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
-                  <p className="text-gray-600 text-sm">{item.text}</p>
+                  <item.icon className="h-10 w-10 text-white mb-4" />
+                  <h4 className="text-lg text-gray-300 font-semibold mb-2">{item.title}</h4>
+                  <p className="text-gray-200 text-sm">{item.text}</p>
                 </motion.div>
               </CometCard>
             ))}

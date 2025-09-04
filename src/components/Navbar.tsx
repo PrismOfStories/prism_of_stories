@@ -111,7 +111,7 @@ export default function Navbar() {
       <nav
         ref={container}
         id="nav-wrapper"
-        className=" w-full z-50 bg-white/95 backdrop-blur-sm "
+        className=" w-full z-50 bg-black backdrop-blur-sm "
       >
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 pt-4 lg:px-8 flex justify-between items-center h-[8vh]">
           <Link href="/" className="flex items-center space-x-2">

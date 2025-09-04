@@ -11,18 +11,18 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-primary border-2 text-primary text-xl">
+    <footer className="bg-primary border-t border-primary border-2 text-primary text-xl">
       <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-8 items-center">
         {/* Left: Logo */}
         <div className="flex items-center space-x-3">
-          <Image src="/images/logo.png" alt="Logo" width={100} height={100} />
-          <span className="font-bold text-xl text-primary">YourBrand</span>
+          <Image src="/images/logoprism.png" alt="Logo" width={250} height={150} />
+          <span className="font-bold text-xl text-primary">Prism of Stories</span>
         </div>
 
         {/* Right: Links + Social */}
         <div className="flex flex-col md:items-end space-y-4">
           {/* Quick Links */}
-          <ul className="flex space-x-6 font-medium">
+          <ul className="flex space-x-6 text-white font-medium">
             <li>
               <Link href="/" className="hover:text-primary transition">
                 Home
@@ -33,11 +33,11 @@ export default function Footer() {
                 About
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/services" className="hover:text-primary transition">
                 Services
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contact" className="hover:text-primary transition">
                 Contact
@@ -46,17 +46,17 @@ export default function Footer() {
           </ul>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 text-xl">
-            <a href="#" className="hover:text-primary">
+          <div className="flex space-x-4 text-white text-xl">
+            {/* <a href="#" className="hover:text-primary">
               <FaFacebookF />
-            </a>
-            <a href="#" className="hover:text-primary">
+            </a> */}
+            <a href="https://www.instagram.com/p_o_s_2025?igsh=NGVleTBzN2N1azhh" className="hover:text-primary">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-primary">
+            {/* <a href="#" className="hover:text-primary">
               <FaXTwitter />
-            </a>
-            <a href="#" className="hover:text-primary">
+            </a> */}
+            <a href="https://www.linkedin.com/in/prismofstories-stories-06a674382/" className="hover:text-primary">
               <FaLinkedin />
             </a>
           </div>
