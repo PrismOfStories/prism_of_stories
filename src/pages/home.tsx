@@ -9,7 +9,7 @@ export default function Home() {
     <div className="">
       <HeroSection />
 
-      <section className="mt-48">
+      <section className="mt-48 mb-28">
         <div className=" max-w-[87rem] mx-auto px-4">
           <div className="w-full flex justify-between items-start gap-8 lg:flex-row flex-col">
             <h1 className="text-7xl text-primary font-bold text-center lg:text-left mb-12 leading-tight">
@@ -58,17 +58,22 @@ export default function Home() {
             ].map((item, i) => (
               <li
                 key={i}
-                className="group space-y-4 px-10 py-10 text-primary hover:bg-primary hover:text-white cursor-pointer transform transition-all duration-300"
+                className="group space-y-4 px-10 py-10 
+                 odd:bg-transparent odd:text-primary 
+                 even:bg-transparent even:text-white
+                 hover:bg-primary hover:text-white 
+                 cursor-pointer transform transition-all duration-300"
               >
                 <h3 className="text-3xl group-hover:hidden font-bold relative z-10">
                   {item.title}
                 </h3>
-                <p className="hidden group-hover:block text-gray-600 group-hover:text-white mt-3 leading-relaxed relative text-3xl z-10 transition-all duration-300">
+                <p className="hidden group-hover:block mt-3 leading-relaxed relative text-3xl z-10 transition-all duration-300">
                   {item.desc}
                 </p>
               </li>
             ))}
           </ul>
+
         </div>
       </section>
 
