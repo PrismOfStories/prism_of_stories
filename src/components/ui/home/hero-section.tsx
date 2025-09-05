@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export default function HeroSection() {
   useEffect(() => {
@@ -80,10 +81,14 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 2 }}
               className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start"
             >
-              <button className="flex items-center border border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition">
+              <Link
+                href="/contact"
+                className="flex items-center border border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/10 transition"
+              >
                 <Play className="mr-2 h-5 w-5" />
                 Get Started Today
-              </button>
+              </Link>
+
             </motion.div>
           </div>
 
