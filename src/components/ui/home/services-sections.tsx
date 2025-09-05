@@ -132,10 +132,10 @@ export function ServicesSection() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div id="service-heading" className="text-left mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="text-primary">Services</span>
           </h2>
-          <p className="text-xl text-left text-primary max-w-3xl  leading-relaxed">
+          <p className="text-xl text-left text-gray-200 max-w-3xl  leading-relaxed">
             We offer comprehensive IT solutions designed to accelerate your
             business growth and digital transformation journey.
           </p>
