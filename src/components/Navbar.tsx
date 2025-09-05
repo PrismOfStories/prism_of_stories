@@ -116,15 +116,15 @@ export default function Navbar() {
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 pt-4 lg:px-8 flex justify-between items-center h-[8vh]">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/logo.png"
+              src="/images/pos.svg"
               alt="logo-navbar"
-              height={70}
-              width={70}
+              height={100}
+              width={100}
               className="logo"
             />
-            <span className="text-2xl font-bold  text-primary lg:flex hidden logo">
+            {/* <span className="text-2xl font-bold  text-primary lg:flex hidden logo">
               Prism of Stories
-            </span>
+            </span> */}
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -150,7 +150,7 @@ export default function Navbar() {
               {isOpen ? (
                 <X className="h-8 w-8 text-primary" />
               ) : (
-                <Menu className="h-8 w-8 text-primary" />
+                <Menu className="h-8 w-8  text-primary" />
               )}
             </button>
           </div>
@@ -160,14 +160,14 @@ export default function Navbar() {
       {isOpen && (
         <div
           ref={mobileMenuRef}
-          className="mobile-menu-overlay fixed top-0 left-0 w-full h-screen z-[55] bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center md:hidden"
+          className="mobile-menu-overlay  fixed top-0 left-0 w-full h-screen z-[55] bg-black backdrop-blur-sm flex flex-col items-center justify-center md:hidden"
           style={{ clipPath: "inset(0% 0% 100% 0%)" }}
         >
           <Image
-            src="/images/logo.png"
+            src="/images/pos.svg"
             alt="logo-navbar"
-            height={70}
-            width={70}
+            height={100}
+            width={100}
             className="logo absolute top-5 left-5"
           />
           <button

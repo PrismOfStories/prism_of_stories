@@ -14,6 +14,7 @@ import {
 import { useEffect } from "react";
 import gsap from "gsap";
 import { CometCard } from "@/components/comet-card";
+import Link from "next/link";
 
 const services = [
   {
@@ -170,12 +171,16 @@ export function ServicesSection() {
                   </div>
 
                   {/* CTA */}
-                  <Button
-                    variant="outline"
-                    className="w-full group-hover:bg-white group-hover:text-black transition-colors bg-transparent"
-                  >
-                    Get Quote
-                  </Button>
+                  <Link href="/contact">
+
+                    <Button
+                      variant="outline"
+                      className="w-full group-hover:bg-white group-hover:text-black transition-colors bg-transparent"
+                    >
+                      Get Quote
+                    </Button>
+                  </Link>
+
                 </CardContent>
               </Card>
             </CometCard>
@@ -187,12 +192,16 @@ export function ServicesSection() {
           <p className="text-primary mb-6 text-4xl">
             Need a custom solution? We&apos;ve got you covered.
           </p>
-          <Button
-            size="lg"
-            className="bg-primary text-2xl text-white hover:opacity-90 py-8 px-8"
-          >
-            Discuss Your Project
-          </Button>
+          <Link href="/contact">
+
+            <Button
+              size="lg"
+              className="bg-primary text-2xl text-white hover:opacity-90 py-8 px-8"
+            >
+              Discuss Your Project
+            </Button>
+          </Link>
+
         </div>
       </div>
     </section>

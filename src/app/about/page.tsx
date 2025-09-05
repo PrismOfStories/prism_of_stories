@@ -33,7 +33,7 @@ export default function AboutPage() {
           <h1 className="text-6xl text-primary font-bold text-center lg:text-left mb-12 leading-tight">
             Who We Are
           </h1>
-          <p className="w-full lg:max-w-[50%] text-center lg:text-right font-medium text-xl text-gray-700 leading-relaxed">
+          <p className="w-full lg:max-w-[50%] text-center lg:text-right font-medium text-xl text-gray-500 leading-relaxed">
             At <strong>Prism of Stories</strong>, we believe every business has
             a story worth telling and the digital world is the best place to
             share it. We craft <strong>websites</strong>,{" "}
@@ -48,12 +48,12 @@ export default function AboutPage() {
         <div className="bg-primary shadow-lg rounded-2xl p-8">
           <h3 className="text-2xl font-bold mb-4 text-white">Our Mission</h3>
           <p className="text-gray-200 leading-relaxed">
-            To empower businesses of all sizes with smart{" "}
-            <strong>digital solutions</strong> that drive growth, build trust,
-            and create lasting impressions. We don’t just deliver projects — we
-            build partnerships where{" "}
-            <strong>your success is our success</strong>.
+            Every brand has its own challenges—different shades, different rays. We don’t
+            just see problems, we absorb them like a prism takes in light. Then, we
+            transform those scattered rays into one powerful solution that shines bright
+            for your business.
           </p>
+
         </div>
         <div className="bg-primary shadow-lg rounded-2xl p-8">
           <h3 className="text-2xl font-bold mb-4 text-white">Our Vision</h3>

@@ -15,7 +15,7 @@ export default function Home() {
             <h1 className="text-7xl text-primary font-bold text-center lg:text-left mb-12 leading-tight">
               Why choose <br /> Prism of Stories?
             </h1>
-            <p className="w-full lg:max-w-[50%] text-center lg:text-right font-medium text-xl text-gray-700 leading-relaxed">
+            <p className="w-full lg:max-w-[50%] text-center lg:text-right font-medium text-xl text-gray-200 leading-relaxed">
               We don’t just build websites we craft digital experiences that
               drive real results. From sleek designs and fast performance to
               SEO, ads, and branding, everything we create is focused on helping
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="mt-32">
-          <h2 className="text-5xl font-bold text-primary mb-20 text-center leading-tight">
+          <h2 className="text-5xl font-bold text-white mb-20 text-center  leading-tight">
             Not just another agency. <br /> We’re your growth partner.
           </h2>
 
